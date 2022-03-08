@@ -1,0 +1,230 @@
+.contentHeader{
+    position: fixed;
+    z-index: 2000;
+    display: flex;
+
+    background-color: #e8e8e850;
+    height: 8vh;
+    width: 100%;
+    align-items: center;
+    box-shadow: 0px 1px 13px rgba(27, 26, 26, 0.89)
+}
+.navLink{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+   
+}.navLink .text{
+    width: 100%;
+    height: 100%;
+    color: #2A9D8F;
+    cursor: pointer;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text:hover{
+    color: #2fa193;
+    font-weight: bold;
+    border-bottom: 3px solid #04a794;
+    background: #6f898417;
+    
+}
+
+.activeNav{
+    color: #2fa193;
+    font-weight: bold;
+    border-bottom: 3px solid #04a794;
+    background: #6f898417;
+}
+.logo{
+    width: 60%;
+    padding: 1%;
+    
+}
+
+
+.iconoFb, .iconoGit, .iconoLink , .iconoInst{ color: #eef0f1;
+                                                font-size: 2em;
+                                            cursor: pointer;}
+
+
+.iconoFb:hover{ color: #087BEA;  font-size: 2.4em;}
+.iconoGit:hover{color: #24292F; font-size: 2.4em;}
+.iconoLink:hover{color: #087FB8; font-size: 2.4em;}
+.iconoInst:hover{color: #C9006C; font-size: 2.4em;}
+
+
+
+/***************************CONTENT PAGE*****************************/
+.contentPage{
+    display: flex;
+    width:  100%;
+    height: 90vh;
+}
+
+.contentInicio{
+    width: 100%;
+}
+
+
+.contentData{
+    padding: 10%;
+    width: 100%;
+    height: 100%;
+    flex-direction: column-reverse;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.textPerfil{
+    font-size: 3.2em;
+    color: #051224;
+    font-weight: 600;
+    z-index: 100;
+}
+.imgPerfil{
+    border-radius: 50%;
+    animation: perfil 2s normal; 
+}
+
+@keyframes perfil {
+    0%{
+        transform:matrix(0.37,0.14,-0.14,0.37,0,0);
+    }
+    100%{ 
+        transform:matrix(1.00,0.00,0.00,1.00,0,0);
+    }
+    
+}
+
+.contentImg{
+  
+    width: 30%;
+    display: flex;
+    position: relative;
+    justify-content: center;
+}
+
+
+.contentImg::after{
+   
+    position: absolute;
+    border-bottom-right-radius: 10px;
+    border-color: #051224;
+
+    border-style: solid;
+    border-width: 0 0.3em 0.25em 0;
+    height: 10em;
+    top: 13.5em;
+    left: 12.4em;
+    margin-top: -1em;
+    width: 10em;
+    
+}
+/***********************ABOUT ME********************************/
+
+.contentInfoMe{
+    width: 80%;
+    margin: auto;
+    align-items: center;
+    display: flex;
+}
+.contentInfoMe .img_for_me{
+    width: 50%;
+}
+
+.contentInfoMe .info_for_me{
+    width: 50%;
+}
+.card_info{
+    width: 80%;
+    padding: 2%;
+    border-radius: 10px;
+    line-height: 28px;
+    background-color: #04a79444;
+    color: #135a52;
+}
+.card_img{
+    margin: auto;
+    width: 194px;
+    height: 277px;
+    padding: 2%;
+    background-color: #7474741c;
+}
+.card_img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/****************************************************************/
+
+.cuadroVerde{
+    width: 500px;
+    height : 500px ;
+    background-color: #5FB5AB;
+    transform: matrix(0.91,0.42,-0.42,0.91,-56,-319);
+    position: absolute;
+    z-index: 100;
+}
+.cuadroVerde::before{
+    content: '';
+    width: 500px;
+    height : 500px ;
+    background-color: #2A9D8F;
+    transform:matrix(1.00,0.00,0.00,1.00,10,10);
+    position: absolute;
+    z-index: 99;
+}
+
+.cuadroAzul{
+    width: 501px;
+    height: 600px;
+    background-color: #434D5A;
+    transform: matrix(0.69,-0.72,0.72,0.69,145,39);
+    position: absolute;
+    z-index: -1000;
+    right: 0;
+}
+.cuadroAzul::after{
+    content: '';
+    width: 501px;
+    height: 600px;
+    background-color: #051224;
+    transform:matrix(1.00,0.00,0.00,1.00,10,10);
+    position: absolute;
+    z-index: -1000;
+    right: 0;
+}
+
+
+
+/*********************************SKILLS*****************************/
+
+.contentBack{
+    display: flex;
+    box-shadow: 1px 2px 12px 0px #c5c5c5;
+    width: 40%;
+    margin-bottom: 4%;
+}
+.titleBack{
+    width: 30%;
+    background-color: #051224;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.skillBack{
+    width: 70%;
+   
+}
+
+
+
+

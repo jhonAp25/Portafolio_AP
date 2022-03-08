@@ -1,25 +1,62 @@
-import logo from './logo.svg';
-import './App.css';
+import Inicio from "./pages/Inicio";
+import  './App.css'
+import ReactFullpage from '@fullpage/react-fullpage';
+import Header from "./components/Header";
+import  React, { useState } from "react";
+import Tecnologia from "./pages/Tecnologia";
+import AboutMe from "./pages/AboutMe";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+
+
+const App = () =>{
+  const anchors = ["Incio", "AboutMe", "Skils"];
+
+  const [titleNav, setTitleNav]=useState(0)
+  const [onFullPageApi, setOnFullPageApi]=useState()
+
+  const scrollOn=(id)=>{
+    setTitleNav(id)
+    
+  }
+
+return(
+
+  
+  <div >
+    <Header  titleNav={titleNav} onFullPageApi={onFullPageApi}  />
+  <ReactFullpage
+      anchors={anchors}
+      licenseKey = {'YOUR_KEY_HERE'}
+      scrollingSpeed = {1000}
+      onLeave={(origin, destination) => {
+        scrollOn(destination.index);
+       
+      }}
+
+      render={({ state, fullpageApi }) => {
+        setOnFullPageApi(fullpageApi)
+        return (
+          <ReactFullpage.Wrapper  >
+              <div className="section">
+              <Inicio/> 
+              </div>
+              <div className="section">
+                <AboutMe />  
+              </div>  
+
+              <div className="section">
+                <Tecnologia  titleNav={titleNav} />
+              </div>  
+              <div className="section">
+                <Tecnologia  titleNav={titleNav} />
+              </div>  
+          </ReactFullpage.Wrapper>
+        
+        );
+      }}
+  
+    /> 
+  </div>
+)}
 
 export default App;
