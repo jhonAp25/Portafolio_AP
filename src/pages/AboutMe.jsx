@@ -1,33 +1,18 @@
 import React from 'react'
 import Cuadro from '../components/Cuadro'
-import imgUser1 from '../assets/img/user.png'
+
+import AboutVista from '../components/AboutVista'
 
 const AboutMe = () => {
     return (
-        <div>
+        <div  >
            
-            <Cuadro width='50vw' height='30vh' background2='#051224' transform='matrix(0.98,-0.17,0.17,0.98,10,-330)'  background= '#434D5A' transform2='matrix(1.00,0.00,0.00,1.00,-10,-10)' /> 
-
-            <div className='contentInfoMe' >
-                <div  className='img_for_me'>
-                    <div className='card_img'>
-                        <img src={imgUser1} alt="" />
-                    </div>
-
-                </div>
-
-                <div className='info_for_me'>
-
-                    <div className='card_info'>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa ullam doloribus eveniet aliquam! Exercitationem, amet provident consequuntur reprehenderit ipsam sit facere, natus cupiditate suscipit dicta minima, quidem ullam voluptatibus culpa?
-                        </p>
-                    </div>
+            <Cuadro width='20vw' height='30vh' background2='#051224' transform='matrix(0.98,-0.17,0.17,0.98,-30,-230)'  background= '#434D5A' transform2='matrix(1.00,0.00,0.00,1.00,-10,-10)' /> 
+            <Cuadro width='20vw' height='30vh' background2='#051224' transform='matrix(0.98,-0.17,0.17,0.98,1700,530)'  background= '#434D5A' transform2='matrix(1.00,0.00,0.00,1.00,10,-10)' /> 
+            <Cuadro width='30vw' height='70vh' background2='#2A9D8F' transform='matrix(0.62,0.79,-0.79,0.62,-380,320)'  background= '#94CEC7' transform2='matrix(1.00,0.00,0.00,1.00,-10,10)' /> 
         
-                </div>
-            </div>
                 
-
+            <AboutVista/>
            
         </div>
     )

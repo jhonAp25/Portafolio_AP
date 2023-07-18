@@ -1,7 +1,6 @@
 import Inicio from "./pages/Inicio";
-import  './App.css'
+
 import ReactFullpage from '@fullpage/react-fullpage';
-import Header from "./components/Header";
 import  React, { useState } from "react";
 import Tecnologia from "./pages/Tecnologia";
 import AboutMe from "./pages/AboutMe";
@@ -23,7 +22,7 @@ return(
 
   
   <div >
-    <Header  titleNav={titleNav} onFullPageApi={onFullPageApi}  />
+   
   <ReactFullpage
       anchors={anchors}
       licenseKey = {'YOUR_KEY_HERE'}
@@ -38,7 +37,7 @@ return(
         return (
           <ReactFullpage.Wrapper  >
               <div className="section">
-              <Inicio/> 
+                <Inicio/> 
               </div>
               <div className="section">
                 <AboutMe />  
