@@ -4,18 +4,21 @@
 /**************  RESPONSIVE ********************************/
 
 @media (min-width: 640px) { 
-
-  
+   
     
 }
 
 @media (min-width: 768px) { 
-  
+   
     
 }
 
 @media (min-width: 1024px) { 
-  
+    .contentInfoMe .img_for_me{
+        top: 0px;
+        right: 0px;
+        z-index: 100;
+    }
 }
 
 @media (min-width: 1280px) { 

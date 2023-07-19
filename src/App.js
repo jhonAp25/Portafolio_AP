@@ -1,6 +1,8 @@
 import Inicio from "./pages/Inicio";
 
+import './assets/css/Index.css'
 import ReactFullpage from '@fullpage/react-fullpage';
+import Header from "./components/Header";
 import  React, { useState } from "react";
 import Tecnologia from "./pages/Tecnologia";
 import AboutMe from "./pages/AboutMe";
@@ -13,7 +15,7 @@ const App = () =>{
   const [titleNav, setTitleNav]=useState(0)
   const [onFullPageApi, setOnFullPageApi]=useState()
 
-  const scrollOn=(id)=>{
+  const scrollOn=(id)=>{  
     setTitleNav(id)
     
   }

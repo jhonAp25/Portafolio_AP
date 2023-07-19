@@ -3,14 +3,14 @@ import imgUser1 from '../assets/img/user.png'
 const AboutVista = () => {
   return (
      
-    <div className='container mx-auto px-5 md:px-0'>
+    <div className='container mx-auto px-5 md:px-0 h-full'>
 
     <div className='content_title'>
         <span className='text_shadow text-9xl'>ABOUT</span>
         <h1 className='text_title  text-3xl font-bold uppercase'>About me</h1>
     </div>
   
-    <div className='contentInfoMe relative' >
+    <div className='contentInfoMe relative lg:mt-32' style={{padding : "0 5%"}}  >
 
         <div  className='img_for_me absolute lg:relative'>
             <div className='card_img w-[100px] h-[100px] md:h-[150px] md:w-[150px]  lg:h-[400px] lg:w-auto rounded-full lg:rounded-md'>
@@ -19,7 +19,7 @@ const AboutVista = () => {
   
         </div>
   
-        <div className='info_for_me p-5  md:p-0'>
+        <div className='info_for_me lg:p-5  md:p-0'>
   
            
             <div className='card_info '>
